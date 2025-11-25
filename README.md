@@ -9,7 +9,7 @@ This guide covers how to install a community-developed Command-Line Interface (C
 
 ---
 
-## 1. Prerequisites: Update Ubuntu and Install Pip**
+## 1. Prerequisites: Update Ubuntu and Install Pip
 
 First, ensure your system is up to date and that you have **pip**, the Python package installer.
 
