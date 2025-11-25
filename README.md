@@ -9,7 +9,7 @@ This guide covers how to install a community-developed Command-Line Interface (C
 
 ---
 
-### **1. Prerequisites: Update Ubuntu and Install Pip**
+## 1. Prerequisites: Update Ubuntu and Install Pip**
 
 First, ensure your system is up to date and that you have **pip**, the Python package installer.
 
@@ -23,7 +23,7 @@ sudo apt install python3-pip -y
 
 ---
 
-### **2. Prerequisites – Install Node.js and npm
+## 2. Prerequisites – Install Node.js and npm
 
 To begin, install **Node.js** and **npm** (Node Package Manager). npm is included automatically when installing Node.js.
 
@@ -41,7 +41,7 @@ npm -v
 
 ---
 
-### **3. Install the Gemini CLI**
+## 3. Install the Gemini CLI
 
 Use **npm** to install the Gemini CLI tool globally. The `-g` flag ensures the `gemini` command is available from any directory.
 
@@ -51,7 +51,7 @@ sudo npm install -g @google/gemini-cli
 
 ---
 
-### **4. Link Your Google Account (Authentication)**
+## 4. Link Your Google Account (Authentication)
 
 Authenticate the CLI to your Google account using:
 
@@ -64,7 +64,7 @@ This will open a browser or provide a URL where you can sign in and authorize th
 
 ---
 
-### **5. Verify the Installation**
+## 5. Verify the Installation
 
 Test your setup by running a sample prompt:
 
