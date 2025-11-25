@@ -23,42 +23,44 @@ sudo apt install python3-pip -y
 
 ---
 
-### **2. Isolate the Installation (Optional but Recommended)**
+### **2. Prerequisites – Install Node.js and npm
 
-To keep your system clean, use **pipx**, which installs Python CLI tools in isolated environments.
-
-```
-# Install pipx
-sudo apt install pipx -y
+To begin, install **Node.js** and **npm** (Node Package Manager). npm is included automatically when installing Node.js.
 
 ```
+# Update package lists
+sudo apt update
 
-> You may need to restart your terminal after this step for the PATH changes to take effect.
+# Install Node.js and npm
+sudo apt install nodejs npm -y
 
----
-
-### **3. Install the Gemini CLI Tool**
-
-Use `pipx` (or `pip` if you skipped Step 2) to install a community-made Gemini CLI tool, such as **gemini-cli**.
-
-```
-pipx install gemini-cli
+# Verify installation
+node -v
+npm -v
 ```
 
 ---
 
-### **4. Configure the CLI with Your API Key**
+### **3. Install the Gemini CLI**
 
-You need an API key to authenticate with Google's Gemini API.
-
-1. Visit **Google AI Studio** and generate an API key.
-2. Run the configuration command:
+Use **npm** to install the Gemini CLI tool globally. The `-g` flag ensures the `gemini` command is available from any directory.
 
 ```
-gemini configure
+sudo npm install -g @google/gemini-cli
 ```
 
-Enter your API key when prompted. The CLI will store it securely.
+---
+
+### **4. Link Your Google Account (Authentication)**
+
+Authenticate the CLI to your Google account using:
+
+```
+gemini auth login
+```
+
+This will open a browser or provide a URL where you can sign in and authorize the CLI. This allows the tool to identify your account and determine which models you can access under the free tier.
+
 
 ---
 
